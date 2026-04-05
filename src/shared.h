@@ -8,7 +8,7 @@
 
 // TYPES AND DECLARATIONS
 
-#define RESOLUTION 256 // RES by RES sized square of slots
+#define RESOLUTION 511 // RES by RES sized square of slots; max resolution is 511
 #define TABLE_SIZE (RESOLUTION * RESOLUTION)
 
 typedef enum {
