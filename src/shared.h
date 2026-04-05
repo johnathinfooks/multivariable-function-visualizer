@@ -8,7 +8,7 @@
 
 // TYPES AND DECLARATIONS
 
-#define RESOLUTION 32 // RES by RES sized square of slots
+#define RESOLUTION 16 // RES by RES sized square of slots
 #define TABLE_SIZE (RESOLUTION * RESOLUTION)
 
 typedef enum {
@@ -41,9 +41,15 @@ typedef double (*Function)(double x, double y);
 // render
 
 int print_table(Table table);
+int print_table_value(Table table);
 
 // vmath
 
 Table calculate_table(Function f, double xmin, double xmax, double ymin, double ymax);
+double f_sine_wave(double x, double y);
+double f_paraboloid(double x, double y);
+double f_saddle(double x, double y);
+
+
 
 #endif // RENDER
