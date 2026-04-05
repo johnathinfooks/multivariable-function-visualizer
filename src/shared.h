@@ -8,18 +8,26 @@
 
 // TYPES AND DECLARATIONS
 
-#define RESOLUTION 32 // RES by RES sized square of slots
+#define RESOLUTION 256 // RES by RES sized square of slots
 #define TABLE_SIZE (RESOLUTION * RESOLUTION)
 
 typedef enum {
-    light_green = 0,
-    green = 1,
-    light_yellow = 2,
-    yellow = 3,
-    light_orange = 4,
-    orange = 5,
-    light_red = 6,
-    red = 7
+    pale_blue     = 0,
+    light_blue    = 1,
+    blue          = 2,
+    bright_blue   = 3,
+    bright_cyan   = 4,
+    light_cyan    = 5,
+    cyan          = 6,
+    teal          = 7,
+    light_green   = 8,
+    green         = 9,
+    yellow_green  = 10,
+    light_yellow  = 11,
+    yellow        = 12,
+    orange        = 13,
+    light_red     = 14,
+    red           = 15
 } ColorIntensity;
 
 typedef struct {
@@ -43,6 +51,7 @@ typedef double (*Function)(double x, double y);
 int assign_color_intensity(Table *t);
 int print_table_intensity(Table table);
 int print_table_value(Table table);
+int print_table_color(Table t);
 
 // vmath
 
