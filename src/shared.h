@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <math.h>
 
-// types and declarations
+// TYPES AND DECLARATIONS
 
 #define RESOLUTION 32 // RES by RES sized square of slots
 #define TABLE_SIZE (RESOLUTION * RESOLUTION)
@@ -36,9 +36,14 @@ typedef struct {
 
 typedef double (*Function)(double x, double y);
 
-// functions
+// FUNCTIONS
+
+// render
 
 int print_table(Table table);
-Table calculate_table(double xmin, double xmax, double ymin, double ymax);
+
+// vmath
+
+Table calculate_table(Function f, double xmin, double xmax, double ymin, double ymax);
 
 #endif // RENDER
