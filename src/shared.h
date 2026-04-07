@@ -1,4 +1,3 @@
-
 #ifndef RENDER_H
 #define RENDER_H
 
@@ -8,7 +7,7 @@
 
 // TYPES AND DECLARATIONS
 
-#define RESOLUTION 511 // RES by RES sized square of slots; max resolution is 511
+#define RESOLUTION 64 // RES by RES sized square of slots; max resolution is 511
 #define TABLE_SIZE (RESOLUTION * RESOLUTION)
 
 typedef enum {
