@@ -15,37 +15,37 @@ int assign_color_intensity(Table *t)
         double v = t->slot[i].value;
 
         if (v < t->min_val + step * 1) {
-            t->slot[i].color = pale_blue;
+            t->slot[i].color = c0;
         } else if (v < t->min_val + step * 2) {
-            t->slot[i].color = light_blue;
+            t->slot[i].color = c1;
         } else if (v < t->min_val + step * 3) {
-            t->slot[i].color = blue;
+            t->slot[i].color = c2;
         } else if (v < t->min_val + step * 4) {
-            t->slot[i].color = bright_blue;
+            t->slot[i].color = c3;
         } else if (v < t->min_val + step * 5) {
-            t->slot[i].color = bright_cyan;
+            t->slot[i].color = c4;
         } else if (v < t->min_val + step * 6) {
-            t->slot[i].color = light_cyan;
+            t->slot[i].color = c5;
         } else if (v < t->min_val + step * 7) {
-            t->slot[i].color = cyan;
+            t->slot[i].color = c6;
         } else if (v < t->min_val + step * 8) {
-            t->slot[i].color = teal;
+            t->slot[i].color = c7;
         } else if (v < t->min_val + step * 9) {
-            t->slot[i].color = light_green;
+            t->slot[i].color = c8;
         } else if (v < t->min_val + step * 10) {
-            t->slot[i].color = green;
+            t->slot[i].color = c9;
         } else if (v < t->min_val + step * 11) {
-            t->slot[i].color = yellow_green;
+            t->slot[i].color = c10;
         } else if (v < t->min_val + step * 12) {
-            t->slot[i].color = light_yellow;
+            t->slot[i].color = c11;
         } else if (v < t->min_val + step * 13) {
-            t->slot[i].color = yellow;
+            t->slot[i].color = c12;
         } else if (v < t->min_val + step * 14) {
-            t->slot[i].color = orange;
+            t->slot[i].color = c13;
         } else if (v < t->min_val + step * 15) {
-            t->slot[i].color = light_red;
+            t->slot[i].color = c14;
         } else {
-            t->slot[i].color = red;
+            t->slot[i].color = c15;
         }
     }
 
