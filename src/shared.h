@@ -7,7 +7,7 @@
 
 // TYPES AND DECLARATIONS
 
-#define RESOLUTION 64 // RES by RES sized square of slots; max resolution is 511
+#define RESOLUTION 128 // RES by RES sized square of slots; max resolution is 511
 #define TABLE_SIZE (RESOLUTION * RESOLUTION)
 
 typedef enum {
@@ -67,10 +67,5 @@ double f_cross_waves(double x, double y);
 double f_spiral(double x, double y);
 double f_egg_carton(double x, double y);
 double f_hyperbolic(double x, double y);
-
-
-// parse
-
-void parse_input(char* eq_str_b, int size_eq_str_b, char* res_str_b, int size_res_str_b);
 
 #endif // SHARED_H

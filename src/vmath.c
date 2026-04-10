@@ -1,6 +1,7 @@
 #include "shared.h"
 
 // f(x, y) =
+// review the documentation for explanation of math
 
 double f_sine_wave(double x, double y) { return sin(x) * cos(y); }
 double f_paraboloid(double x, double y) { return x*x + y*y; }
