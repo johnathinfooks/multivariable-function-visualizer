@@ -30,7 +30,10 @@ def compileAll():
     subprocess.run(["gcc", *cf, "-lm", "-o", out], check=True)
     print("\tSource files:\n")
     for n in cf:
-        print("\t{}".format(n))
+        try:
+            print("\t{}".format(n))
+        except Exception as e:
+            print(f"Error: {e}.")
 
     print("\n\tCompilation successful\n")
 

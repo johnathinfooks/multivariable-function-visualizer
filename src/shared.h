@@ -60,5 +60,8 @@ double f_paraboloid(double x, double y);
 double f_saddle(double x, double y);
 
 
+// parse
+
+void parse_input(char* eq_str_b, int size_eq_str_b, char* res_str_b, int size_res_str_b);
 
 #endif // RENDER
