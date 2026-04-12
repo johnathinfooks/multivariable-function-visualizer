@@ -91,5 +91,12 @@ int print_table_color(Table t)
     printf("\n\n");
 
     return 1;
+}
 
+void display(const char *name, Function f, double xmin, double xmax, double ymin, double ymax)
+{
+    printf("\n%s\n", name);
+    Table t = calculate_table(f, xmin, xmax, ymin, ymax);
+    assign_color_intensity(&t);
+    print_table_color(t);
 }

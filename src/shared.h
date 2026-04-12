@@ -51,6 +51,7 @@ int assign_color_intensity(Table *t);
 int print_table_intensity(Table table);
 int print_table_value(Table table);
 int print_table_color(Table t);
+void display(const char *name, Function f, double xmin, double xmax, double ymin, double ymax);
 
 // vmath
 
